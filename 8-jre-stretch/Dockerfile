@@ -22,6 +22,9 @@ RUN \
     && mv pmd-bin-6.3.0 pmd-bin
 
 RUN \
+    && npm install -g serverless
+
+RUN \
     mkdir -p /root/.ssh \
     && chmod 700 /root/.ssh \
     && echo "" > /root/.ssh/known_hosts

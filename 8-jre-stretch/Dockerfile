@@ -4,6 +4,15 @@ MAINTAINER "Jeremy CURNY" <jeremy.curny.pro@gmail.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+RUN  \
+    apt-get update \
+    && apt-get install -y \
+        maven \
+    && curl -sL https://deb.nodesource.com/setup_8.x | bash \
+    && apt-get install -y nodejs \
+    && apt-get clean autoclean \
+    && apt-get autoremove
+
 RUN \
     cd \
     && curl -sL -o ~/checkstyle.jar https://downloads.sourceforge.net/project/checkstyle/checkstyle/8.10/checkstyle-8.10-all.jar \

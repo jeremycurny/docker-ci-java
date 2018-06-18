@@ -22,7 +22,7 @@ RUN \
     && mv pmd-bin-6.3.0 pmd-bin
 
 RUN \
-    && npm install -g serverless
+    npm install -g serverless
 
 RUN \
     mkdir -p /root/.ssh \

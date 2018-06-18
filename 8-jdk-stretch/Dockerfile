@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-stretch
+FROM openjdk:8-jdk-stretch
 
 MAINTAINER "Jeremy CURNY" <jeremy.curny.pro@gmail.com>
 
